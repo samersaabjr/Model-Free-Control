@@ -1,6 +1,8 @@
-This repository contains implementations for the model-free non-adaptive controller proposed in "Multivariable Non-adaptive Controller Design" (DOI: 10.1109/TIE.2020.2998753) in MATLAB.
+This repository contains implementations of the Quadruple Tank Process simulation for the model-free non-adaptive controller proposed in "Multivariable Non-adaptive Controller Design" (DOI: 10.1109/TIE.2020.2998753) in MATLAB.
 
 This is a discrete-time robust multivariable (nonadaptive) tracking controller that comes with a simple structure, requires very limited information on the plant model, and is relatively easy to tune. In addition to being easy to tune and implement, an objective of this controller is to deal with a class of large-scale systems with complex dynamics. 
+
+**Experiment**
 
 In this example we compare the performance of the proposed controller with the optimal stochastic PID controller in [1], [2], and that in [3]. The multivariable PID gains of the former two controllers are obtained by minimizing the error covariance matrix of different augmented systems, and the latter considers the problem of designing a multivariable PID controller via direct optimal linear quadratic regulator.
 
@@ -10,7 +12,15 @@ The considered continuous-time system of a quadruple tank process with non-minim
 
 The figure above shows the output response in the presence and absence of measurement noise.
 
+Attempt | #1 | #2 | #3 | #4 | 
+--- | --- | --- | --- | --- |
+--- | --- | --- | --- | --- | 
+
+**How to Execute Code**
+
 The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1].
+
+**References**
 
 [1] Pradhan, Jatin K., and Arun Ghosh. "Multi-input and multi-output proportional-integral-derivative controller design via linear quadratic regulator-linear matrix inequality approach." IET Control Theory & Applications 9.14 (2015): 2140-2145.
 
