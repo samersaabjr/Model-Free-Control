@@ -12,12 +12,14 @@ The considered continuous-time system of a quadruple tank process with non-minim
 
 The figure above shows the output response in the presence and absence of measurement noise.
 
+Thabl table below shows the transient performance in presence of noise, &theta $N(0,0.05^{2})$
+
    | [1] | [2] | [3] | Proposed
    | --- | --- | --- | ---
 y1: OS% | 50% | 400 | 25% |0%
 y2: OS% | 20% | 25% | 7% | 25%
-y1: ts | 400 | 400 | 36 | 5
-y2: ts | 400 | 200 | 20 | 5
+y1: ts (sec) | 400s | 400s | 36s | 5s
+y2: ts (sec) | 400s | 200s | 20s | 5s
 
 **How to Execute Code**
 
