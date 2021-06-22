@@ -14,26 +14,7 @@ The figure above shows the output response in the presence and absence of measur
 
 Thabl table below shows the transient performance in presence of noise, $N(0,0.05^{2})$
 
-![\Large A_{c} = 
-    \begin{bmatrix}
-        -0.0159 & 0 & 0.0256 & 0 \\
-        0 & -0.011 & 0 & 0.00179 \\
-        0 & 0 & -0.0256 & 0 \\
-        0 & 0 & 0 & -0.0179
-    \end{bmatrix}](https://latex.codecogs.com/svg.latex?\Large&space;A_{c} = 
-    \begin{bmatrix}
-        -0.0159 & 0 & 0.0256 & 0 \\
-        0 & -0.011 & 0 & 0.00179 \\
-        0 & 0 & -0.0256 & 0 \\
-        0 & 0 & 0 & -0.0179
-    \end{bmatrix}) 
-
-   | [1] | [2] | [3] | Proposed
-   | --- | --- | --- | ---
-y1: OS% | 50% | 400 | 25% |0%
-y2: OS% | 20% | 25% | 7% | 25%
-y1: ts (sec) | 400s | 400s | 36s | 5s
-y2: ts (sec) | 400s | 200s | 20s | 5s
+$$\theta$$
 
 **How to Execute Code**
 
