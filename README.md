@@ -12,9 +12,7 @@ The considered continuous-time system of a quadruple tank process with non-minim
 
 The figure above shows the output response in the presence and absence of measurement noise.
 
-Thabl table below shows the transient performance in presence of noise, $N(0,0.05^{2})$
-
-$$\theta$$
+Thabl table below shows the transient performance in presence of noise, N(0,0.05^{2}).
 
 **How to Execute Code**
 
