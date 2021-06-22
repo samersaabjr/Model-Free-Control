@@ -18,8 +18,6 @@ The table below shows the transient performance of the four compared controllers
    | --- | --- | --- | ---
 y1: OS% | 50% | 400 | 25% |0%
 y2: OS% | 20% | 25% | 7% | 25%
-y1: ts | 400 | 400 | 36 | 5
-y2: ts | 400 | 200 | 20 | 5
 y1: ts (sec) | 400s | 400s | 36s | 5s
 y2: ts (sec) | 400s | 200s | 20s | 5s
 
