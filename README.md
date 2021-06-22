@@ -14,7 +14,7 @@ The figure above shows the output response in the presence and absence of measur
 
 The table below shows the transient performance of the four compared controllers, where the percentage overshoot, OS%, and the settling time, ts, are shown.
 
- | [1] | [2] | [3] | Proposed
+Output | [1] | [2] | [3] | Proposed
 --- | --- | --- | --- | ---
 y1: OS% | 50% | 400 | 25% |0%
 y2: OS% | 20% | 25% | 7% | 25%
@@ -23,7 +23,7 @@ y2: ts (sec) | 400s | 200s | 20s | 5s
 
 The table below shows the transient performance in the presence of noise, N(0, 0.05^{2}), which lists the standard deviation of the error at the time, t, during the first 100 seconds, over the entire range (2000 sec), and during the last 100 seconds.
 
- | t in [0,100] sec | t in [0,2000] sec | t in [1900,2000] sec
+St. Dev. | t in [0,100] sec | t in [0,2000] sec | t in [1900,2000] sec
 --- | --- | --- | ---
 std(y1_ref - y1) | 0.065 | 0.026 | 0.019
 std(y2_ref - y2) | 0.024 | 0.030 | 0.016
