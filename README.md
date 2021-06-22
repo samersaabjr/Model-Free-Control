@@ -4,7 +4,7 @@ This is a discrete-time robust multivariable (nonadaptive) tracking controller t
 
 **Experiment**
 
-In this example we compare the performance of the proposed controller with the optimal stochastic PID controller in [1], [2], and that in [3]. The multivariable PID gains of the former two controllers are obtained by minimizing the error covariance matrix of different augmented systems, and the latter considers the problem of designing a multivariable PID controller via direct optimal linear quadratic regulator.
+The experiment considered in this repository compares the performance of the proposed controller with the controllers in [1], [2], and [3]. The former controller considers the problem of designing a multivariable PID controller via direct optimal linear quadratic regulator, and the multivariable PID gains of the latter two controllers are obtained by minimizing the error covariance matrix of different augmented systems.
 
 The considered continuous-time system of a quadruple tank process with non-minimum phase setting is as described in [1]. The system is discretized with sampling period Ts=0.1 sec. The proposed controller parameters used in both settings (with noise and without noise) are K(k) = 1/(k^{0.2}) * 500I and gamma = 1.1. The gain is divided by by k^{0.2} as descirbed in Section III-A of the published paper. so that the controller can partly reject measurement noise.
 
@@ -25,10 +25,10 @@ y2: ts (sec) | 400s | 200s | 20s | 5s
 
 The table below shows the transient performance in the presence of noise, N(0, 0.05^{2}), which lists the standard deviation of the error at the time, t, during the first 100 seconds, over the entire range (2000 sec), and during the last 100 seconds.
 
-   | t \in [0,100] | t \in [0,2000] | t \in [1900,2000]
+   | t in [0,100] sec | t in [0,2000] sec | t in [1900,2000] sec
    | --- | --- | ---
-std(y1_ref - y1) | 50% | 400 | 25%
-std(y2_ref - y2) | 20% | 25% | 7% 
+std(y1_ref - y1) | 0.065 | 0.026 | 0.019
+std(y2_ref - y2) | 0.024 | 0.030 | 0.016
 
 **How to Execute Code**
 
