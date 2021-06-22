@@ -7,6 +7,7 @@ In this example we compare the performance of the proposed controller with the o
 The considered continuous-time system of a quadruple tank process with non-minimum phase setting is as described in [1]. The system is discretized with sampling period Ts=0.1 sec. The proposed controller parameters used in both settings (with noise and without noise) are K(k) = 1/(k^{0.2}) * 500I and gamma = 1.1. The gain is divided by by k^{0.2} as descirbed in Section III-A of the published paper. so that the controller can partly reject measurement noise.
 
 ![output_response_QTP](https://user-images.githubusercontent.com/44982976/122838947-11906c80-d2c5-11eb-8e21-96b11825e020.png)
+
 The figure above shows the output response in the presence and absence of measurement noise.
 
 The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1].
