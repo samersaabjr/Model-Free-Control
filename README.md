@@ -21,7 +21,7 @@ y2: OS% | 20% | 25% | 7% | 25%
 y1: ts (sec) | 400s | 400s | 36s | 5s
 y2: ts (sec) | 400s | 200s | 20s | 5s
 
-The table below shows the transient performance in the presence of noise, N(0, 0.05^{2}), which lists the standard deviation of the error at the time, t, during the first 100 seconds, over the entire range (2000 sec), and during the last 100 seconds.
+The table below shows the transient performance of the proposed controller in the presence of noise, N(0, 0.05^{2}), which lists the standard deviation of the error at the time, t, during the first 100 seconds, over the entire range (2000 sec), and during the last 100 seconds.
 
 St. Dev. | t in [0,100] sec | t in [0,2000] sec | t in [1900,2000] sec
 --- | --- | --- | ---
@@ -30,7 +30,7 @@ std(y2_ref - y2) | 0.024 | 0.030 | 0.016
 
 **How to Execute Code**
 
-The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1].
+The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1]. To run the code, simply run "QuadrupleTank_P_type_clean.m".
 
 **References**
 
