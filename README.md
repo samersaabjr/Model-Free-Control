@@ -6,7 +6,7 @@ This is a discrete-time robust multivariable (nonadaptive) tracking controller t
 
 The experiment considered in this repository compares the performance of the proposed controller with the controllers in [1], [2], and [3]. The former controller considers the problem of designing a multivariable PID controller via direct optimal linear quadratic regulator, and the multivariable PID gains of the latter two controllers are obtained by minimizing the error covariance matrix of different augmented systems.
 
-The considered continuous-time system of a quadruple tank process with non-minimum phase setting is as described in [1]. The system is discretized with sampling period Ts=0.1 sec. The proposed controller parameters used in both settings (with noise and without noise) are K(k) = 1/(k^{0.2}) * 500I and gamma = 1.1. The gain is divided by by k^{0.2} as descirbed in Section III-A of the published paper. so that the controller can partly reject measurement noise.
+The considered continuous-time system of a quadruple tank process with non-minimum phase setting is as described in [1]. The system is discretized with sampling period Ts=0.1 sec. The proposed controller parameters used in both settings (with noise and without noise) are K(k) = 1/(k^{0.2}) * 500I and gamma = 1.1. The gain is divided by by k^{0.2} as descirbed in Section III-A of the published paper so that the controller can partly reject measurement noise.
 
 ![output_response_QTP](https://user-images.githubusercontent.com/44982976/122838947-11906c80-d2c5-11eb-8e21-96b11825e020.png)
 
