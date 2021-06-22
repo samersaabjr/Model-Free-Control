@@ -12,7 +12,7 @@ The considered continuous-time system of a quadruple tank process with non-minim
 
 The figure above shows the output response in the presence and absence of measurement noise.
 
-The table below shows the transient performance of the four compared controllers, where the percentage overshoot, OS\%, and the settling time, ts, are shown.
+The table below shows the transient performance of the four compared controllers, where the percentage overshoot, OS%, and the settling time, ts, are shown.
 
    | [1] | [2] | [3] | Proposed
    | --- | --- | --- | ---
@@ -25,7 +25,7 @@ y2: ts (sec) | 400s | 200s | 20s | 5s
 
 The table below shows the transient performance in the presence of noise, N(0, 0.05^{2}), which lists the standard deviation of the error at the time, t, during the first 100 seconds, over the entire range (2000 sec), and during the last 100 seconds.
 
-   | t between | [2] | [3]
+   | t \in [0,100] | t \in [0,2000] | t \in [1900,2000]
    | --- | --- | ---
 std(y1_ref - y1) | 50% | 400 | 25%
 std(y2_ref - y2) | 20% | 25% | 7% 
