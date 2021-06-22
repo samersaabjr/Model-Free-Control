@@ -12,7 +12,7 @@ The considered continuous-time system of a quadruple tank process with non-minim
 
 The figure above shows the output response in the presence and absence of measurement noise.
 
-Attempt | #1 | #2 | #3 | #4 | 
+    | [1] | [2] | [2] | Proposed | 
 --- | --- | --- | --- | --- |
 --- | --- | --- | --- | --- | 
 
