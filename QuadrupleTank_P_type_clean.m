@@ -32,14 +32,18 @@ A4 = A2;
 
 kc = 0.5;
 g = 981;
+
 k1 = 3.14;
 k2 = 3.29;
+
 alfa1 = 0.43;
 alfa2 = 0.34;
+
 T1 = 63;
 T2 = 91;
 T3 = 39;
 T4 = 56;
+
 Ac = [
     -1/T1 0 A3/(A1*T3) 0
     0 -1/T2 0 A4/(A2*T4)
@@ -57,6 +61,7 @@ Cc = [
     kc 0 0 0
     0 kc 0 0
     ];
+    
 % Discretization of state space (A,B,C)
 sysc = ss(Ac, Bc, Cc, zeros(p,q));
 sys = c2d(sysc,Ts);
@@ -79,17 +84,20 @@ Yp = Y;
 disp(' ');
 noise = input('To add measurement noise enter 1 otherwise enter 0 ');
 disp(' ');
+
 if noise == 0, 
     sigR = 0; 
 elseif noise == 1, sigR = 0.05; 
 else
     error('Options are either 1 or 0 ');
 end
+
 Noise = sigR*randn(2,length(t)); % Generation of measurement noise
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Options for limiting the maximum absolute value of the control signal
 Constraint = input('To add a maximum absolute limit to the control signal enter 1 otherwise enter 0 ');
 disp(' ');
+
 if Constraint == 1
     thres = input('Enter a positive value not less than 3 for the maximum limit for the control e.g. 5 ');
     disp(' ');
@@ -99,15 +107,17 @@ elseif abs(Constraint) > 0
 end
 
 % Implementing the closed-loop control system
-
 for k = 1:length(t)-1
 % Model-free Controller     
+
     if noise == 0
         KP = 500*eye(2);
     elseif noise == 1
         KP = 500*eye(2)/k^0.2;
     end
+    
     gamma = 1.1; % gamma = 1 + Ts
+    
     if k == 1
         % Evaluate errors 
         E = [yd1(k) yd2(k) ]'-[y1(k) y2(k) ]' + Noise(:,k);
@@ -134,11 +144,11 @@ for k = 1:length(t)-1
         
         U = U + KP*(gamma*Ep - E);
         
-        
         if Constraint == 1
             if abs(U(1)) > thres; U(1) = sign(U(1))*thres;end
             if abs(U(2)) > thres; U(2) = sign(U(2))*thres;end
         end
+        
         Ym = Y;
         Y = Yp;
         X = A*X + B*U;
@@ -152,10 +162,11 @@ for k = 1:length(t)-1
     u1(k) = U(1);
     u2(k) = U(2);
     
-
 end
+
 err1 = yd1-y1;
 err2 = yd2-y2;
+
 disp('Standard deviation of output errors for the first 2,000 sec, entire range and last 2,000 sec')
 [std(err1(1:2000)) std(err1) std(err1(18000:20000));std(err2(1:2000)) std(err2) std(err2(18000:20000))]
 
