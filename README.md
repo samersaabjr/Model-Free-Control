@@ -30,7 +30,7 @@ std(y2_ref - y2) | 0.024 | 0.030 | 0.016
 
 **How to Execute Code**
 
-The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1]. To run the code, simply run "QuadrupleTank_P_type_clean.m".
+The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1]. To run the code, simply run "QuadrupleTank_P_type_clean.m". You will be prompted to select whether noise should be present or not. Then you will be promopted whether to add a maximum absolute limit to the control signal or not - if yes then you will also be prompted to enter a positive value not less than 3 for the maximum limit for the control. To get the results shown in the figure above, select not to add a maximum absolute limit on the control signal.
 
 **References**
 
