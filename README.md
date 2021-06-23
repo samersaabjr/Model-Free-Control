@@ -2,7 +2,7 @@ This repository contains implementations of the Quadruple Tank Process simulatio
 
 This is a discrete-time robust multivariable (nonadaptive) tracking controller that comes with a simple structure, requires very limited information on the plant model, and is relatively easy to tune. In addition to being easy to tune and implement, an objective of this controller is to deal with a class of large-scale systems with complex dynamics. 
 
-**Experiment**
+# Experiment
 
 The experiment considered in this repository compares the performance of the proposed controller with the controllers in [1], [2], and [3]. The former controller considers the problem of designing a multivariable PID controller via direct optimal linear quadratic regulator, and the multivariable PID gains of the latter two controllers are obtained by minimizing the error covariance matrix of different augmented systems.
 
@@ -28,11 +28,11 @@ St. Dev. | t in [0,100] sec | t in [0,2000] sec | t in [1900,2000] sec
 std(y1_ref - y1) | 0.065 | 0.026 | 0.019
 std(y2_ref - y2) | 0.024 | 0.030 | 0.016
 
-**How to Execute Code**
+# How to Execute Code
 
 The file "QuadrupleTank_P_type_clean.m" contains the implementation of the model-free controller on a quadruple tank process with non-minimum phase setting as described in [1]. To run the code, simply run "QuadrupleTank_P_type_clean.m". You will be prompted to select whether noise should be present or not. Then you will be promopted whether to add a maximum absolute limit to the control signal or not - if yes then you will also be prompted to enter a positive value not less than 3 for the maximum limit for the control. To get the results shown in the figure above, select not to add a maximum absolute limit on the control signal.
 
-**References**
+# References
 
 [1] Pradhan, Jatin K., and Arun Ghosh. "Multi-input and multi-output proportional-integral-derivative controller design via linear quadratic regulator-linear matrix inequality approach." IET Control Theory & Applications 9.14 (2015): 2140-2145.
 
